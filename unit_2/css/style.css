@@ -1,0 +1,68 @@
+body {
+	background-color: lightyellow;
+}
+title, h1, p {
+	text-align: center;
+}
+
+
+.slogan {
+	font-style: italic;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #333;  /* width of nav border and background color of nav */
+	background-color: #333;
+}
+
+li {
+	
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: #111;
+}
+
+li:last-child {
+    border-bottom: none;
+
+h1 {
+	font-size: 45px;
+
+}
+h3 {
+font-family: Arial, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+	text-transform: uppercase;
+
+
+}
+
+}
+
+
+#second {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.important {
+	font-size: 10px;
+
+}

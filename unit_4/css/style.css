@@ -1,31 +1,4 @@
 
-@font-face{
-	font-family: 'Arimo-Bold';
-	src: url("../fonts/Arimo-Bold.ttf");
-	font-weight: bold;
-}
-
-@font-face{
-	font-family: 'Arimo-BoldItalic';
-	src: url("../fonts/Arimo-BoldItalic.ttf");
-	font-weight: bold;
-	font-style: italic;
-}
-@font-face{
-	font-family: 'Arimo-Italic';
-	src: url("../fonts/Arimo-Italic.ttf");
-	font-style: italic;
-}
-
-@font-face{
-	font-family: 'Arimo-Regular';
-	src: url("../fonts/Arimo-Regular.ttf");
-}
-@font-face{
-	font-family: 'Lobster-Regular';
-	src: url("../fonts/Lobster-Regular.ttf");
-}
-
 *{
 	padding: 0px;
 	margin: 0px;

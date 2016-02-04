@@ -1,0 +1,293 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+ 	box-sizing: border-box;
+}
+
+body {
+	/* background: url("../images/lightbackground.png");*/
+	background: #E1DADA;
+background-color: #111 solid;
+
+}
+
+header {
+    background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav{
+	background-color: #E8C66A;
+	 border: 1px black solid;
+    padding: 20px;
+}
+
+.col{background-color: #FFE2B8;
+	 border: 1px black solid;
+    padding: 20px; 
+overflow: auto;
+
+
+
+}
+h1 {
+	padding: 25px 10px 0;
+	font-size: 35px;
+	font-family: 'Syncopate', sans-serif;
+	text-align: center;
+
+}
+
+.logocolor{
+	color: #E32400;
+}
+
+.clearfix:after{
+	font-size: 0px;
+	height: 0px;
+	visibility: hidden;
+	content: " ";
+	display:block;
+	clear: both;
+}
+.wrapper{
+	background: #FFF;
+	position: relative;
+	width:80%;
+	max-width: 1300px;
+	margin: 56px auto 0;
+	/*background-color: #FFFF00;*/
+	border-radius: 25px;
+	box-shadow: -20px 10px 10px rgba(0,0,0,.2)
+;
+}
+
+.col{
+	width: 50%;
+	float: left;
+
+}
+.col:nth-of-type(2){
+
+padding-top: 100px;
+padding-right: 5%;
+}
+
+
+
+nav ul { 
+	width: 710px;
+	text-align: center;     
+	margin: auto;
+	list-style-type: none;
+	padding:15px 0 25px 5px;
+	font-size: 15px;
+	/*border: 1.9px solid #111; */
+	/*background-color: #E5EDFF;*/
+	
+
+}
+li a{
+	text-align: center;
+	display: block;
+/*	box-shadow: 10px 10px 5px #888888;*/
+	color: #000;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-right: 50px;
+	padding: 10px;
+	font-weight: 660;
+	font-family: 'Syncopate',serif;
+}
+
+li {
+float: left;
+}
+
+
+li:nth-of-type(1) a{
+
+
+}
+
+li a:hover {
+	background-color: #E2CFB6
+
+}
+
+li:last-child {
+    border-bottom: none;
+
+}
+.right{
+	position: center;
+
+} 
+
+
+main { 
+	width: 90%;
+	margin:auto;
+
+}
+
+.arrowleft {
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid transparent;
+	border-right: 30px solid #000;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	top: 400px;
+	left: 2%;
+
+}
+
+.arrowright {
+	width: 0px;
+	height: 0px;
+	border-top: 15px solid transparent;
+	border-left: 30px solid #000;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	top: 400px;
+	right: 2%;
+
+}
+
+h2 {
+font-family: 'Syncopate',sans-serif;
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	letter-spacing: 4px;
+	margin-bottom: 25px;
+	margin-top: 50px;
+/*	border-bottom: 1px solid;*/
+
+}
+img {
+	display:block;
+	margin-left:10%;
+	padding-top: 200px;
+}
+
+#stars{
+	margin:0 auto 15px;
+	padding: 0;
+	width: 35%;
+}
+main p {
+	font-size: 20px;
+	font-family: 'Sanchez', serif;
+	line-height: 40px;
+	margin: auto;
+}
+
+h3 {
+	text-align: center;
+	display: block;
+	padding: 0px;
+	margin: 10px;
+	font-weight:none;
+	font-family: 'Syncopate', cursive;
+	letter-spacing: 3px;
+
+}
+
+main h3 {
+	font-size: 15px;
+	text-align: center;
+	display: block;
+	padding: 0px;
+	margin-top: 15px;
+	font-weight:none;
+	font-family: 'Sanchez', serif;
+
+}
+.link{
+	margin-bottom: 200px;
+
+}
+h3.info{
+	margin-bottom: 20px;
+
+}
+footer h2 {
+	font-size: 30px;
+	text-align: center;
+	margin: 0px;
+	padding:0px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	font-family: 'Syncopate';
+	font-weight:900;
+}
+footer p {
+	font-size: 20px;
+	text-align: center;
+	padding-left: 0px;
+	font-family: 'Sanchez', serif;
+margin: auto;
+	
+	max-width: 24em;
+	line-height: 40px;
+	text-align: center;
+}
+
+footer ul {
+
+	font-size: 18px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1360px){
+	.col{
+		float: none;
+		width: 80%;
+		margin: auto;
+
+	}
+.col:nth-of-type(2){
+	padding-top: 0px;
+
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+		}
+@media screen and (max-width: 1100px){
+	.wrapper{
+		width:90%;
+	}
+}
+
+	@media screen and (max-width: 725px){
+	 	nav ul{
+	 		width:80%;
+	 	}
+		li{
+			float:none;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		li a{
+			display: inline;
+			margin-right:0;
+		}
+}
+@media screen and (max-width: 450px){
+		h1{
+			font-size: 24px;
+		}
+		}
+@media screen and (max-width: 375px){
+		footer p{
+			font-size: 1px;
+		}
+		}

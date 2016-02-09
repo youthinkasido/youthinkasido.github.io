@@ -16,12 +16,17 @@ header {
   /*  background-color: #FFED74;*/
     border: 1px black solid;
     padding: 20px;
+    margin-bottom: -1px;
 }
 
 nav{
 	background;
+	margin-top: -2px;
 	 border: 1px black solid;
-	margin-top: -1px;
+	
+	width: 50%;
+	position:relative;
+	margin:auto;
 }
 
 .col{background-color: #FFE2B8;
@@ -81,11 +86,14 @@ padding-right: 1%;
 
 
 nav ul { 
-	width: 710px;
+	width:120%;
 	text-align: center;     
 	margin: auto;
 	list-style-type: none;
 	font-size: 15px;
+	position: relative;
+	margin:auto;
+
 
 	/*border: 1.9px solid #111; */
 	/*background-color: #E5EDFF;*/
@@ -99,10 +107,13 @@ li a{
 	color: #000;
 	border-radius: 10px;
 	text-decoration: none;
-	margin-right: 50px;
+	margin-right: 50%;
 	padding: 13px;
 	font-weight: 660;
 	font-family: 'Syncopate',serif;
+	position: relative;
+	margin:auto;
+		overflow: auto;
 }
 
 li {
@@ -274,7 +285,7 @@ img{
 
 @media screen and (max-width: 885px){
 	.col{
-		width:90%;
+		width:80%;
 	}
 }
 

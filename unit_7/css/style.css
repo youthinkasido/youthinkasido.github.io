@@ -4,7 +4,6 @@
 	margin: 0px;
  	box-sizing: border-box;
 }
-
 body {
 	/* background: url("../images/lightbackground.png");*/
 	background: #E1DADA;
@@ -17,28 +16,22 @@ header {
     border: 1px black solid;
     padding: 20px;
     margin-bottom: -1px;
-    padding-left:5px;
 }
 
 nav{
-	background;
-	margin-top: -2px;
 	 border: 1px black solid;
-	
 	position:relative;
 	margin:auto;
 }
 
 
 nav ul { 
-	width:703px;
+	width:615px;
 	text-align: center;     
-	margin: auto;
 	list-style-type: none;
 	font-size: 15px;
 	position: relative;
 	margin:auto;
-	padding-left: 6%;
 
 
 	/*border: 1.9px solid #111; */
@@ -97,7 +90,6 @@ overflow: auto;
 
 }
 h1 {
-	padding: 25px 10px 0;
 	font-size: 35px;
 	font-family: 'Syncopate', sans-serif;
 	text-align: center;
@@ -136,7 +128,6 @@ height:600px;
 .col:nth-of-type(2){
 
 padding-bottom:0.2%;
-padding-right: 1%;
 
 }
 
@@ -189,8 +180,9 @@ font-family: 'Syncopate',sans-serif;
 }
 img {
 	display:block;
-	margin-left: 4%;
+	margin:auto;
 	padding-top: 100px;
+
 }
 
 #stars{
@@ -264,54 +256,91 @@ footer ul {
 }
 
 @media screen and (max-width: 1360px){
-	.col{
-		float: none;
-		width: 70%;
-		margin: auto;
-
-	}
-
+/*resizes wrapper to fit screen which holds pictures and review information*/
+/*repositions arrows to fit smaller screen size, removes white "main background"*/
 img{
 	margin-left: auto;
 	margin-right: auto;
-
+	padding:0;
+	min-width: 70%;
+	max-width: 90%;
 
 }
+
+	main{
+		width: 100%;
+		padding: 0;
+	}
+	.arrowleft{
+		top: 515px;
+		left: 10px;
+		z-index: 3;
+
+	}
+		.arrowright{
+		top: 515px;
+		right: 10px;
+		z-index: 3;
+}
+	.col:first-of-type{
+		padding-top: 50px;
+	}
+	h2{
+		margin-top: 15px;
+	}
+	.col{
+		float: none;
+		width: 100%;
+		margin: auto;
+		height: auto;
+	}
+/*	removes radius and border of columns, combines columns to form one column */
+.col:first-of-type {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom: none;
+}
+
+.col:last-of-type {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top: none;
+}
+
 		}
 
-@media screen and (max-width: 1100px){
-	.wrapper{
-		width:90%;
-	}
-}
 
-@media screen and (max-width: 885px){
-	.col{
-		width:80%;
-	}
-}
 
 @media screen and (max-width: 789px){
 img{
-	width: 90%;
+	width: 100%;
 
 }
 }
-
+/*stacks resizes nav ul to fit horizontally and highlight accordingly*/
 	@media screen and (max-width: 725px){
 	 	nav ul{
-	 		width:80%;
+	 		width:100%;
 	 	}
 		li{
 			float:none;
-			margin-top: 5px;
-			margin-bottom: 5px;
+		
 		}
 		li a{
-			display: inline;
+			display: block;
 			margin-right:0;
-			padding: 5px 120px 4px 120px;
-		
+			padding: 15px;
+			border-bottom: 1px solid black;
+			border-radius: 0;
+}
+
+ li:last-of-type a{
+ 	border-bottom: none;
+ }
 }
 @media screen and (max-width: 450px){
 		h1{
@@ -324,9 +353,4 @@ img{
 		}
 		}
 
-		@media screen and (max-width:1480px){
-			nav ul{
-				padding: 0%;
-			}
-		}
-		}
+		

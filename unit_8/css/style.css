@@ -196,6 +196,7 @@ main p {
 	line-height: 40px;
 	margin: auto;
 	max-width: 30em;
+	text-align: center;
 }
 
 h3 {
@@ -262,8 +263,8 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 	padding:0;
-	min-width: 70%;
-	max-width: 90%;
+	max-width: 95%;
+position: relative;
 
 }
 
@@ -272,13 +273,13 @@ img{
 		padding: 0;
 	}
 	.arrowleft{
-		top: 515px;
+		top: 230px;
 		left: 10px;
 		z-index: 3;
 
 	}
 		.arrowright{
-		top: 515px;
+		top: 230px;
 		right: 10px;
 		z-index: 3;
 }
@@ -315,12 +316,7 @@ img{
 
 
 
-@media screen and (max-width: 789px){
-img{
-	width: 100%;
 
-}
-}
 /*stacks resizes nav ul to fit horizontally and highlight accordingly*/
 	@media screen and (max-width: 725px){
 	 	nav ul{
@@ -342,6 +338,21 @@ img{
  	border-bottom: none;
  }
 }
+@media screen and (max-width: 640px){
+		.arrowleft{
+		top: 500px;
+		left: -41px;
+		z-index: 3;
+
+	}
+	.arrowright{
+		top: 500px;
+		right: -41px;
+		z-index: 3;
+}
+}
+
+
 @media screen and (max-width: 450px){
 		h1{
 			font-size: 24px;
@@ -349,8 +360,12 @@ img{
 		}
 @media screen and (max-width: 375px){
 		footer p{
-			font-size: 1px;
+			font-size: 12px;
 		}
 		}
-
+@media screen and (max-width:400px){
+	main p{
+		text-align: center;
+	}
+}
 		
